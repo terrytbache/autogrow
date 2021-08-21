@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie-edge">
+  <title>cssArt</title>
+
+</head>
+
+<style>
+
+:root {
+  --size: 80;
+  --unit: calc((var(--size) / 827) *1vmin);
+}
+
+
+
+
+
+
+#block {
+  position: absolute;
+  height: 400px;
+  width: 700px;
+  background-color: black;
+  top: 0px;
+  left: 0px;
+
+}
+
+#bodySign {
+  position: absolute;
+  height: 50px;
+  width: 80px;
+  background-color: #966F33;
+  bottom: 50px;
+  left: 5px;
+  transform: rotate(-2deg);
+}
+
+.cloud {
+  width: 300px;
+  height: 200px;
+  position: absolute;
+}
+
+#cloud1 {
+  left: calc(30% - 200px);
+  top: 200px;
+}
+
+#cloud2 {
+  right: calc(30% - 200px); 
+    top: 200px;
+}
+
+.cloud-mask {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  background-color: #a8eaf0;
+}
+
+.c1 {
+  background-color: #ecf0f0;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  top: 100px;
+}
+
+.c2 {
+  background-color: #ecf0f0;
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  top: 10px;
+  left: 70px;
+}
+
+.c3 {
+  background-color: #ecf0f0;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  top: 80px;
+  left: 200px;
+}
+
+#cotLeft {
+  position: absolute;
+  height: 5px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: green;
+  top: 260px;
+  left: 142px;
+  transform: rotate(-5deg);
+}
+
+#cotRight {
+  position: absolute;
+  height: 5px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: green;
+  top: 260px;
+  left: 162px;
+  transform: rotate(5deg);
+}
+
+#ground {
+  position: absolute;
+  bottom: 0;
+  height: 10%; 
+  width: 100%;
+  background-color: #C19A6B;
+}
+
+#groundLeft {
+  position: absolute;
+  top: 303px;
+  left: 131.5px;
+  width: 0; 
+  height: 0; 
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 18px solid #6F4E37;
+}
+
+#groundRight {
+  position: absolute;
+  top: 303px;
+  left: 158px;
+  width: 0; 
+  height: 0; 
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 18px solid #6F4E37;
+}
+
+#millArms {
+  position: absolute;
+  height: 200px;
+  width: 200px;
+  bottom: 235px;
+  left: 608.5px;
+  animation:spin 9s linear infinite;
+}
+
+
+#millArm1 {
+  position: absolute;
+  height: 200px;
+  width: 5px;
+  bottom: 0px;
+  left: 100px;
+  background-color: black; opacity:0.6; 
+
+}
+
+#millArm2 {
+  position: absolute;
+  height: 200px;
+  width: 5px;
+  bottom: 0px;
+  left: 100px;
+  transform: rotate(90deg);
+  background-color: black;opacity:0.6; 
+
+}
+
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+#millBody {
+  position: absolute;
+  left: 685px;
+  bottom: 190px;
+  border-bottom: 150px solid grey; 
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  height: 0;
+  width: 40px;
+}
+
+#millDoor {
+  position: absolute;
+  left: 701px;
+  bottom: 195px;
+  height: 30px;
+  width: 20px;
+  background-color: black; opacity: 0.6;
+}
+
+#millFix {
+  position: absolute;
+  left: 705px;
+  bottom: 328px;
+  height: 12px;
+  width: 12px;
+  background-color: black;
+}
+
+
+#millFlag11 {
+  position: absolute;
+  height: 100px;
+  width: 15px;
+  bottom: 0px;
+  border-radius: 50%;
+  left: -5px;
+  background-color: black; opacity:0.6; 
+}
+
+#millFlag12 {
+  position: absolute;
+  height: 100px;
+  width: 15px;
+  bottom: 100px;
+  border-radius: 90%;
+  right: -5px;
+  background-color: black; opacity:0.6; 
+}
+
+
+#millHill {
+  position: absolute;
+  height: 200px;
+  width: 800px;
+  border-radius: 50%;
+  background-color: #AFE1AF;
+  bottom: 0px;
+  right: 350px;
+  transform: rotate(-2deg);
+}
+
+#millTop {
+  position: absolute;
+  left: 685px;
+  bottom: 340px;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-bottom: 25px solid black; opacity:0.6;
+  height: 0;
+  width: 0;
+}
+
+#millWindow1 {
+  position: absolute;
+  left: 692px;
+  bottom: 270px;
+  height: 20px;
+  width: 15px;
+  background-color: black; opacity: 0.1;
+}
+
+#millWindow2 {
+  position: absolute;
+  left: 715px;
+  bottom: 270px;
+  height: 20px;
+  width: 15px;
+  background-color: black; opacity: 0.1;
+}
+
+#nailSign1 {
+  position: absolute;
+  height: 3px;
+  width: 3px;
+  background-color: silver; opacity: 0.6;
+  bottom: 55px;
+  left: 42px;
+  border-radius: 50%;
+}
+
+#nailSign2 {
+  position: absolute;
+  height: 3px;
+  width: 3px;
+  background-color: silver; opacity: 0.6;
+  bottom: 90px;
+  left: 42px;
+  border-radius: 50%;
+}
+
+
+
+#plantContainer {
+  margin: auto;
+  height: 400px;
+  width: 300px;
+  position: absolute;
+  bottom: 70px;
+  left: calc(30% - 200px);
+}
+
+#plantContainer2 {
+  margin: auto;
+  height: 400px;
+  width: 300px;
+  position: absolute;
+  bottom: 70px;
+  right: calc(30% - 200px);
+}
+
+
+#queue {
+  width: 30px;
+  height: 25px;
+  background-color: #6F4E37;
+  border-radius: 00% 00% 50% 50%;
+  position: absolute;
+  transform: rotate(180deg);
+  top: 296px;
+  right: 125px;
+}
+
+
+
+#signContainer1 {
+  margin: auto;
+  height: 120px;
+  width: 100px;
+  position: absolute;
+  bottom: 150px;
+  left: calc(2%);
+}
+
+#signContainer2 {
+  margin: auto;
+  height: 120px;
+  width: 100px;
+  position: absolute;
+  bottom: 150px;
+  right: calc(2%);
+}
+
+
+#sky {
+  background-color: #a8eaf0;
+  position: absolute;
+  top: 0;
+  height: calc(var(--unit) * 827);
+  width: calc(var(--unit) *1200);
+}
+
+
+#stemSign {
+  position: absolute;
+  height: 50px;
+  width: 5px;
+  background-color: grey; 
+  bottom: 0px;
+  left: 40px;
+}
+
+
+#stemTrunk {
+  position: absolute;
+  height: 50px;
+  width: 5px;
+  background-color: tan;
+  top: 260px;
+  left: 157px;
+}
+
+#sun {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-color: yellow;
+  top: 0px;
+  left: 0px;
+  animation-duration: 40s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-name: sunUp;
+}
+
+@keyframes sunRight{
+  50% {transform:  translateY(-300px);}
+}
+
+@keyframes sunUp {
+  50% {transform:  translateX(1800px);}
+  
+}
+
+#sunBox {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  top: 300px;
+  left: -350px;
+  animation-duration: 20s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-name: sunRight;
+}
+
+
+
+
+
+
+
+
+
+
+
+.rainDrop {
+  position: absolute;
+  width: 3px;
+  height: 6px;
+  border-radius: 50%;
+  top: 130px;
+  background-color: blue;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+#rainDrop1 {
+  left: 30px;
+  animation-duration: 1.1s;
+  animation-name: drop1;
+}
+
+#rainDrop2 {
+  left: 60px;
+  animation-duration: .8s;
+  animation-name: drop1;
+}
+
+#rainDrop3 {
+  left: 90px;
+  animation-duration: 1s;
+  animation-name: drop1;
+}
+
+#rainDrop4 {
+  left: 120px;
+  animation-duration: 1.2s;
+  animation-name: drop1;
+}
+
+#rainDrop5 {
+  left: 150px;
+  animation-duration: .5s;
+  animation-name: drop1;
+}
+
+#rainDrop6 {
+  left: 180px;
+  animation-duration: 1s;
+  animation-name: drop1;
+}
+
+#rainDrop7 {
+  left: 210px;
+  animation-duration: 1.5s;
+  animation-name: drop1;
+}
+
+#rainDrop8 {
+  left: 240px;
+  animation-duration: .7s;
+  animation-name: drop1;
+}
+
+
+@keyframes drop1{
+  100% {transform:  translateY(500px);}
+
+
+</style>
+
+
+<body>
+<div id="currentStrain">currentStrain = black_jack_fem_auto</div>
+<div id="currentStage">currentStage = seed</div>
+<div id="currentElapsedDays_text">growDay = </div>
+<div id="currentElapsedDays">totalElapsedDays = </div>		
+<div id="sky">
+  <div id="sunBox">
+    <div id="sun"></div>
+  </div>
+  <div class="cloud" id="cloud1">
+    <div class="c1"></div>
+    <div class="c2"></div>
+    <div class="c3"></div>
+    <div class="cloud-mask"></div>
+    <div class="rainDrop" id="rainDrop1"></div>
+    <div class="rainDrop" id="rainDrop2"></div>
+    <div class="rainDrop" id="rainDrop3"></div>
+    <div class="rainDrop" id="rainDrop4"></div>
+    <div class="rainDrop" id="rainDrop5"></div>
+    <div class="rainDrop" id="rainDrop6"></div>
+    <div class="rainDrop" id="rainDrop7"></div>
+    <div class="rainDrop" id="rainDrop8"></div>
+  </div>
+  <div class="cloud" id="cloud2">
+    <div class="c1"></div>
+    <div class="c2"></div>
+    <div class="c3"></div>
+    <div class="cloud-mask"></div>
+    <div class="rainDrop" id="rainDrop1"></div>
+    <div class="rainDrop" id="rainDrop2"></div>
+    <div class="rainDrop" id="rainDrop3"></div>
+    <div class="rainDrop" id="rainDrop4"></div>
+    <div class="rainDrop" id="rainDrop5"></div>
+    <div class="rainDrop" id="rainDrop6"></div>
+    <div class="rainDrop" id="rainDrop7"></div>
+    <div class="rainDrop" id="rainDrop8"></div>
+  </div>
+  <div id="millBody"></div>
+  <div id="millTop"></div>
+  <div id="millWindow1"></div>
+  <div id="millWindow2"></div>
+  <div id="millArms">
+    <div id="millArm1">
+      <div id="millFlag11"></div>
+      <div id="millFlag12"></div>
+    </div>
+    <div id="millArm2">
+      <div id="millFlag11"></div>
+      <div id="millFlag12"></div>
+    </div>
+  </div>
+  <div id="millFix"></div>
+  <div id="millDoor"></div>
+  <div id="millHill"></div>
+  <div id="signContainer1">
+    <div id="stemSign"></div>
+    <div id="bodySign"></div>
+    <div id="nailSign1"></div>
+    <div id="nailSign2"></div>
+  </div> 
+  <div id="signContainer2">
+    <div id="stemSign"></div>
+    <div id="bodySign"></div>
+    <div id="nailSign1"></div>
+    <div id="nailSign2"></div>
+  </div>
+  <div id="ground"></div>
+  <div id="plantContainer">
+    <div id="stemTrunk"></div>
+    <div id="cotLeft"></div>
+    <div id="cotRight"></div>
+    <div id="queue"></div>
+    <div id="groundLeft"></div>
+    <div id="groundRight"></div>
+  </div>
+  <div id="plantContainer2">
+    <div id="stemTrunk"></div>
+    <div id="cotLeft"></div>
+    <div id="cotRight"></div>
+    <div id="queue"></div>
+    <div id="groundLeft"></div>
+    <div id="groundRight"></div>
+  </div>
+</div>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js"></script>
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="cssArtvisuals.js"> </script>
+
+</body>
+</html>

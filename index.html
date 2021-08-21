@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie-edge">
+  <title>AutoGrow</title>
+  <link rel="stylesheet" href="main.css"> 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@600&display=swap" rel="stylesheet">
+
+</head>
+
+<style>
+
+  .moon {
+    position: absolute;
+    margin: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    background-color: transparent !important;
+    border-radius: 50%;
+    box-shadow: 25px 10px 0px 0px rgba(70,70,270,0.7);
+
+  }
+  
+    .moonedge {
+    position: absolute;
+    margin: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 99px;
+    height: 100px;
+    background-color: transparent !important;
+    border-radius: 50%;
+    box-shadow: 25px 10px 0px 0px grey;
+  }
+   
+    .star1{
+    position: absolute;
+    margin: 0;
+    top: 55px;
+    right: 0;
+    bottom: 0;
+    left: 75px;
+    width: 5px; 
+    height: 5px;
+    background-color: white;
+    border-radius: 50%;
+    animation-name: starAnimate1;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+  }
+  
+      .star2{
+    position: absolute;
+    margin: 0;
+    top: 65px;
+    right: 0;
+    bottom: 0;
+    left: 60px;
+    width: 4px;
+    height: 4px;
+    background-color: white;
+    border-radius: 50%;
+    animation-name: starAnimate1;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+  }
+  
+      .star3{
+    position: absolute;
+    margin: 0;
+    top: 110px;
+    right: 0;
+    bottom: 0;
+    left: 110px;
+    width: 5px;
+    height: 5px;
+    background-color: white;
+    border-radius: 50%;
+    animation-name: starAnimate1;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+  }
+  
+        .star4{
+    position: absolute;
+    margin: 0;
+    top: 113px;
+    right: 0;
+    bottom: 0;
+    left: 55px;
+    width: 1px;
+    height: 1px;
+    background-color: white;
+    border-radius: 50%;
+  }
+  
+        .star5{
+    position: absolute;
+    margin: 0;
+    top: 70px;
+    right: 0;
+    bottom: 0;
+    left: 85px;
+    width: 2px;
+    height: 2px;
+    background-color: white;
+    border-radius: 50%;
+  }
+  
+    @keyframes starAnimate1 {
+     0% {
+      background-color: rgba(255,255,255,1);
+   }
+    50% {
+      background-color: rgba(255,255,255,0.8);
+   }
+    80% {
+      background-color: rgba(255,255,255,0.7);
+   }
+    100% {
+      background-color: rgba(255,255,255,0.85);
+   }
+  
+  }
+
+#payload {
+	position: absolute;
+    font-size: 15px;
+}
+
+#links {
+    position: absolute;
+    font-size: 15px;
+    left: 80px;
+}
+
+#soil1Text {
+    position: absolute;
+    font-size: 15px;
+    color: red;
+    top: 165px;
+}
+
+#soil1Level {
+    position: absolute;
+    font-size: 15px;
+    color: red;
+}
+
+#soil2Text {
+    position: absolute;
+    font-size: 15px;
+    color: red;
+    top: 180px;
+}
+
+#soil2Level {
+    position: absolute;
+}
+
+#LightText {
+    position: absolute;
+    font-size: 15px;
+    color: red;
+    top: 195px;
+}
+
+#LightStatus {
+    position: absolute;
+}
+
+#Pump1Text {
+    position: absolute;
+    font-size: 15px;
+    color: red;
+    top: 210px;
+}
+
+#Pump1Status {
+    position: absolute;
+}
+
+#Pump2Text {
+    position: absolute;
+    font-size: 15px;
+    color: red;
+    top: 225px;
+}
+
+#Pump2Status {
+    position: absolute;
+}
+
+#cameraImage {
+    position: absolute;
+    font-size: 15px;
+    left: 350px;
+}
+
+#cssArt {
+    position: absolute;
+    font-size: 15px;
+    left: 550px;
+}
+
+#growRoom {
+    position: absolute;
+    top: 265px;
+}
+  
+#currentStrain {
+    position: absolute;
+    font-size: 15px;
+    color: red;
+    margin: 0;
+    top: 0px;
+    right: 10px;
+    bottom: 0;
+}  
+  
+  
+#currentStage {
+    position: absolute;
+    color: red;
+    margin: 0;
+    top: 15px;
+    right: 10px;
+    bottom: 0;
+    font-size: 15px;
+}  
+
+  
+#currentElapsedDays {
+    position: absolute;
+    color: red;
+    margin: 0;
+    top: 30px;
+    right: 10px;
+    bottom: 0;
+    font-size: 15px;
+}   
+
+#currentElapsedDays_text {
+    position: absolute;
+    color: red;
+    margin: 0;
+    top: 30px;
+    right: 30px;
+    bottom: 0;
+    font-size: 15px;
+}     
+
+
+
+body {
+	background-color: black;
+	font-family: monospace;
+	color: white;
+}
+	
+
+</style>
+<body>
+
+<div class="moonedge"></div>
+<div class="moon"></div>
+<div class="star1"></div>
+<div class="star2"></div>
+<div class="star3"></div>
+<div class="star4"></div>
+<div class="star5"></div>	
+<div id="currentStrain">currentStrain = black_jack_fem_auto</div>
+<div id="currentStage">currentStage = seed</div>
+<div id="currentElapsedDays_text">growDay = </div>
+<div id="currentElapsedDays">totalElapsedDays = </div>
+<br>
+<br>
+<br>
+<br> 
+<br>
+<br>
+<p style="border:1px solid Tomato;"></p>
+	<!-- I finally figured out how to comment code in HTML!  Friggin' sweet!  And yes, the comments get pushed through to the browser... -->	
+<p id="payload">payload:</p> 
+<p id="links">Links</p>
+<p id="cameraImage"><a href="livestream.html">Livestream</a></p>
+<p id="cssArt"><a href="cssart.html">CSSart</a></p>
+<p id="soil1Text">Soil sensor 1 level is:<span id="soil1Level">Text</span></p>
+<p id="soil2Text">Soil sensor 2 level is:<span id="soil2Level">Text</span></p>
+<p id="LightText">Light status:<span id="LightStatus">Text</span></p>
+<p id="Pump1Text">Pump 1 status: <span id="Pump1Status">Text</span></p>
+<p id="Pump2Text">Pump 2 status:<span id="Pump2Status">Text</span></p>
+<canvas id="growRoom" width="200" height="100" style="background-color:rgb(30,30,30)"></canvas>
+
+<!-- Javascript script files -->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js"></script>
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script language="javascript" type="text/javascript">
+	function loadlink(){
+    $('#links').load('data4.txt',function () {
+       $(this).unwrap();
+    });
+}
+    
+loadlink(); // This will run on page load
+</script>
+<script src="visuals.js"> </script>
+<script>
+var canvas = document.getElementById("growRoom");
+var ctx = canvas.getContext("2d");
+var radius = canvas.height / 2;
+ctx.translate(radius, radius);
+radius = radius * 0.90
+drawClock();
+
+</script>
+
+</body>
+
+
+</html>
+
